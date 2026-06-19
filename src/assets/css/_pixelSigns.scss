@@ -1,0 +1,269 @@
+@import './breakpoints.scss';
+
+.pixelSignProjectsDirection {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  left: 1550px;
+  bottom: 188px;
+
+  @include breakpoint-height(v900) {
+    width: 185px;
+  }
+
+  @include breakpoint-height(v700) {
+    width: 170px;
+    bottom: 159px;
+  }
+
+  @include breakpoint-height(v600) {
+    width: 155px;
+    bottom: 138px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 128px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 118px;
+  }
+
+  p {
+    font-size: 24px;
+    bottom: 143px;
+    left: 31px;
+
+    @include breakpoint-height(v900) {
+      font-size: 22px;
+      bottom: 130px;
+      left: 29px;
+    }
+
+    @include breakpoint-height(v700) {
+      font-size: 20px;
+      bottom: 120px;
+      left: 27px;
+    }
+
+    @include breakpoint-height(v600) {
+      font-size: 19px;
+      bottom: 110px;
+      left: 24px;
+    }
+
+    @include breakpoint-height(v450) {
+      bottom: 110px;
+      left: 23px;
+    }
+  }
+}
+
+.pixelSignSkillsDirection {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  bottom: 188px;
+  left: 5600px;
+
+  @include breakpoint-height(v900) {
+    width: 185px;
+  }
+
+  @include breakpoint-height(v700) {
+    width: 170px;
+    bottom: 159px;
+  }
+
+  @include breakpoint-height(v600) {
+    width: 155px;
+    bottom: 138px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 128px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 118px;
+  }
+
+  p {
+    font-size: 24px;
+    bottom: 143px;
+    left: 48px;
+
+    @include breakpoint-height(v900) {
+      font-size: 22px;
+      bottom: 130px;
+      left: 45px;
+    }
+
+    @include breakpoint-height(v700) {
+      font-size: 20px;
+      bottom: 120px;
+      left: 40px;
+    }
+
+    @include breakpoint-height(v600) {
+      bottom: 109px;
+      left: 33px;
+    }
+
+    @include breakpoint-height(v450) {
+      font-size: 20px;
+      bottom: 110px;
+      left: 35px;
+    }
+  }
+}
+
+.pixelSignText {
+  position: absolute;
+  color: #646464;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.pixelSignGoBackUpDirection {
+  position: absolute;
+  left: 1280px;
+  width: 180px;
+  bottom: 149px;
+
+  @include breakpoint-height(v900) {
+    width: 170px;
+    bottom: 148px;
+  }
+
+  @include breakpoint-height(v700) {
+    width: 160px;
+    bottom: 118px;
+  }
+
+  @include breakpoint-height(v600) {
+    width: 150px;
+    bottom: 118px;
+    left: 1290px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 118px;
+    left: 1300px;
+  }
+
+  @include breakpoint-width(h1800) {
+    left: 1630px;
+  }
+
+  div {
+    @include breakpoint-width(h1800) {
+      transform: scaleX(-1);
+    }
+  }
+
+  p {
+    font-size: 23px;
+    bottom: 126px;
+    left: 30px;
+
+    @include breakpoint-height(v900) {
+      font-size: 22px;
+      bottom: 119px;
+      left: 27px;
+    }
+
+    @include breakpoint-height(v700) {
+      font-size: 21px;
+      bottom: 112px;
+      left: 24px;
+    }
+
+    @include breakpoint-height(v600) {
+      font-size: 19.5px;
+      bottom: 104px;
+      left: 23px;
+    }
+
+    @include breakpoint-height(v450) {
+      font-size: 20px;
+      bottom: 106px;
+      left: 22px;
+    }
+
+    @include breakpoint-width(h1800) {
+      z-index: 1;
+      left: 22px;
+    }
+
+    @include breakpoint-both(h1800, v500) {
+      left: 19px;
+    }
+
+    @include breakpoint-both(h1800, v450) {
+      left: 19px;
+      bottom: 105px;
+    }
+
+    @include breakpoint-both(h1800, v400) {
+      left: 19px;
+    }
+  }
+}
+
+.pixelSignAlmostDone {
+  position: absolute;
+  left: 6550px;
+  width: 190px;
+  bottom: 149px;
+
+  @include breakpoint-height(v900) {
+    width: 170px;
+  }
+
+  @include breakpoint-height(v700) {
+    width: 160px;
+    bottom: 118px;
+  }
+
+  @include breakpoint-height(v600) {
+    width: 155px;
+    bottom: 118px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 118px;
+  }
+
+  p {
+    font-size: 22px;
+    bottom: 135px;
+    left: 29px;
+
+    @include breakpoint-height(v900) {
+      font-size: 19.5px;
+      bottom: 121px;
+      left: 26px;
+    }
+
+    @include breakpoint-height(v700) {
+      font-size: 18px;
+      bottom: 113px;
+      left: 25px;
+    }
+
+    @include breakpoint-height(v600) {
+      font-size: 18px;
+      bottom: 108px;
+      left: 22px;
+    }
+
+    @include breakpoint-height(v450) {
+      font-size: 18px;
+      bottom: 109px;
+      left: 22px;
+    }
+  }
+}

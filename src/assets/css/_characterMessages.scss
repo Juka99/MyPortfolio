@@ -1,0 +1,261 @@
+@import '../../assets/css/_breakpoints.scss';
+
+// Knight bubble
+.pixelKnight-container {
+  position: absolute;
+  left: 2500px;
+  bottom: 0;
+  overflow: visible;
+}
+
+.pixelKnight {
+  width: 100px;
+  position: absolute;
+  z-index: 3;
+  bottom: 183px;
+  transform: scaleX(-1);
+
+  @include breakpoint-height(v700) {
+    bottom: 154px;
+    width: 95px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 134px;
+    width: 85px;
+    left: -30px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 124px;
+    left: -30px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 114px;
+    left: -30px;
+    width: 80px;
+  }
+}
+
+.knightBubble {
+  width: 250px;
+  position: absolute;
+  z-index: 3;
+  bottom: 310px;
+  left: 45px;
+
+  @include breakpoint-height(v700) {
+    bottom: 270px;
+    width: 230px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 243px;
+    width: 210px;
+    left: 20px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 230px;
+    left: 10px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 210px;
+    left: 5px;
+  }
+}
+
+.knightBubble__text {
+  position: absolute;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  left: 25px;
+  top: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+
+  @include breakpoint-height(v700) {
+    left: 18px;
+    top: 18px;
+  }
+
+  @include breakpoint-height(v600) {
+    left: 5px;
+    top: 15px;
+    font-size: 16px;
+  }
+}
+
+// Wizard bubble
+.pixelWizard-container {
+  position: absolute;
+  left: 5120px;
+  bottom: 0;
+  overflow: visible;
+
+  @include breakpoint-height(v700) {
+    left: 5100px;
+  }
+
+  @include breakpoint-height(v600) {
+    left: 5080px;
+  }
+}
+
+.pixelWizard {
+  width: 100px;
+  position: absolute;
+  z-index: 3;
+  bottom: 183px;
+  transform: scaleX(-1);
+
+  @include breakpoint-height(v700) {
+    bottom: 159px;
+    width: 95px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 139px;
+    width: 80px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 129px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 119px;
+    width: 70px;
+  }
+}
+
+.wizardBubble {
+  width: 250px;
+  position: absolute;
+  z-index: 3;
+  bottom: 320px;
+  left: 60px;
+
+  @include breakpoint-height(v700) {
+    bottom: 290px;
+    width: 230px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 252px;
+    width: 210px;
+  }
+
+  @include breakpoint-height(v450) {
+    bottom: 240px;
+    left: 55px;
+  }
+
+  @include breakpoint-height(v375) {
+    bottom: 210px;
+    left: 45px;
+  }
+}
+
+.wizardBubble__text {
+  position: absolute;
+  font-size: 18px;
+  width: 270px;
+  text-align: center;
+  left: -10px;
+  top: 32px;
+  letter-spacing: 1px;
+  font-style: italic;
+
+  @include breakpoint-height(v700) {
+    left: -20px;
+    top: 28px;
+  }
+
+  @include breakpoint-height(v600) {
+    left: -30px;
+    top: 25px;
+    font-size: 16px;
+  }
+}
+
+// Darth Vader bubble
+.pixelDarthVader-container {
+  position: absolute;
+  left: 3850px;
+  bottom: 0;
+  overflow: visible;
+}
+
+.pixelDarthVader {
+  position: absolute;
+  width: 120px;
+  bottom: 139px;
+  animation: darthVaderWalk 1.5s steps(6) infinite;
+  z-index: 4;
+
+  @include breakpoint-height(v700) {
+    bottom: 110px;
+    width: 110px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 111px;
+    width: 100px;
+  }
+
+  @include breakpoint-height(v400) {
+    bottom: 111px;
+    width: 80px;
+    left: 7px;
+  }
+}
+
+.darthVaderBubble {
+  width: 250px;
+  position: absolute;
+  z-index: 3;
+  bottom: 300px;
+  left: 70px;
+
+  @include breakpoint-height(v700) {
+    bottom: 255px;
+    width: 230px;
+  }
+
+  @include breakpoint-height(v600) {
+    bottom: 240px;
+    left: 62px;
+  }
+
+  @include breakpoint-height(v400) {
+    bottom: 195px;
+    left: 55px;
+  }
+}
+
+.darthVaderBubble__text {
+  position: absolute;
+  font-size: 18px;
+  width: 220px;
+  text-align: center;
+  left: 18px;
+  top: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+
+  @include breakpoint-height(v700) {
+    left: 6px;
+    top: 18px;
+    font-size: 17px;
+  }
+
+  @include breakpoint-height(v600) {
+    left: 7px;
+    top: 17px;
+  }
+}

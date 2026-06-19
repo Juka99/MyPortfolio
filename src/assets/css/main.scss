@@ -1,0 +1,63 @@
+@import './_colors.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', serif, Arial;
+}
+
+html,
+body {
+  background: $c-sky-blue;
+  box-sizing: border-box;
+  height: 100dvh; /* Dynamic viewport height */
+  margin: 0;
+  overflow: hidden;
+  touch-action: manipulation; /* Prevent browser gestures */
+  overscroll-behavior: none;
+}
+
+.prevent-pointer {
+  pointer-events: none;
+}
+
+:root {
+  --time-portal-blue: #3aa8c3;
+  --time-portal-lightBlue: #0ff;
+  --time-portal-spinAnimation: spin 23s cubic-bezier(0.39, -0.52, 0.53, 0.98)
+    infinite;
+  --portal-intro-duration: 3s;
+  --portal-intro-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  --background-color: black;
+  --text-color: hsl(0, 0%, 100%);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
